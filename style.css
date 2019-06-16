@@ -1,0 +1,341 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    background-color: rgba(245,245,245,1);
+  }
+  h1, h2, h3, p {
+    letter-spacing: 0.02em;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(53,62,66,1);
+    padding: 1% 0;
+    z-index: 1;
+    width: 100%;
+  }
+  header div {
+    width: 25%;
+    padding-left: 15%;
+  }
+  nav {
+      width: 75%;
+      display: flex;
+      justify-content: flex-end;
+      padding-right: 15%;
+  }
+
+  .topnav {
+    overflow: hidden;
+  }
+  .topnav a {
+    display: inline-block;
+    color: rgba(255,255,255,1);
+    font-weight: bold;
+    text-align: center;
+    margin-left: 2%;
+    text-decoration: none;
+    font-size: 1em;
+  }
+  .topnav a:hover {
+    color: rgba(0,146,219,1);
+  }
+  .topnav .icon {
+    display: none;
+    font-size: 1.5em;
+  }
+
+  .container {
+      /*width: 1200px;*/
+      /*width: 62.5%*/
+      width: 70%;
+      display: block;
+      margin: 0 auto;
+  }
+
+  main {
+      background-image: linear-gradient(rgba(71,154,227,1), rgba(0,120,217,1));
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      height: 450px;
+      padding: 2%;
+  }
+  .maintext {
+      color: rgba(255,255,255,1);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+  }
+  .maintext h2 {
+    font-size: 1.4em;
+  }
+  .podnaslov {
+    font-weight: 200;
+    margin: -12px 0;
+  }
+  .maintext i {
+    width: 16px;
+  }
+.maintext span {
+  margin-left: 9px;
+}
+sup {
+  color: red;
+}
+
+  #row2 {
+      height: 310px;
+      display: flex;
+      justify-content: space-around;
+      align-items: flex-start;
+      color: rgba(51,51,51,1);
+      background-color: rgba(245,245,245,1);
+      padding: 2%;
+  }
+  #row2 div {
+      width: 30%;
+  }
+  #row2 a {
+    text-decoration: none;
+    color: rgba(0,146,219,1);
+  }
+
+  #row3 {
+      height: auto;
+      display: flex;
+      align-items: stretch;
+      justify-content: space-between;
+      padding: 2% 2% 4%;
+      color: rgba(51,51,51,1);
+      background-color: rgba(255,255,255,1);
+  }
+  #row3 h3 {
+      font-size: 1.5em;
+  }
+  .testemonials {
+      display: flex;
+      flex-direction: column;
+      width: 65%;
+  }
+  .people {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+  }
+  .peopleimg img {
+      width: 80px;
+      height: 80px;
+  }
+  .peopletext {
+      width: 81%;
+  }
+  .peopletext p {
+      font-size: 1em;
+  }
+  .peoplenaslov {
+    font-weight: bold;
+    margin-bottom: -15px;
+  }
+
+.contact {
+  width: 32%;
+}
+  form {
+      display: flex;
+      flex-direction: column;
+      height: 360px;
+  }
+  input, textarea {
+      margin-bottom: 14px;
+      padding: 12px;
+      color: rgba(153,153,153,1);
+      border: 1px solid rgba(204,204,204,1);
+      font-size: 1em;
+      line-height: 1.5em;
+  }
+  input {
+      height: 40px;
+  }
+  textarea {
+      height: 120px;
+  }
+  button {
+    width: 120px;
+    height: 40px;
+    background-color: rgba(0,146,219,1);
+    color: rgba(255,255,255,1);
+    font-size: 1em;
+    border: 1px solid white;
+    padding: 10px 0;
+  }
+  button:hover {
+    cursor: pointer;
+  }
+
+  footer {
+      height: 290px;
+      background-color: rgba(53,62,66,1);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      color: rgba(154,159,161,1);
+  }
+  footer p {
+    text-align: center;
+  }
+  .footerbela {
+    color: white;
+  }
+  .mreze {
+      display: flex;
+      justify-content: space-around;
+      width: 239px;
+  }
+  .mreze a {
+    font-size: 2em;
+  }
+  .linkovi {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      width: 753px;
+  }
+  .mreze a, .linkovi a {
+      text-decoration: none;
+      color: rgba(154,159,161,1);
+      margin: 0 1%;
+  }
+  .mreze a:hover, .linkovi a:hover {
+    color: white;
+  }
+
+  @media screen and (max-width: 1355px) {
+    header {
+      flex-direction: column;
+      justify-content: center;
+    }
+    header div {
+      padding-left: 0;
+      width: auto;
+    }
+    nav {
+    justify-content: center;
+    padding-right: 0;
+    width: 80%;
+    }
+  }
+
+@media screen and (max-width: 1200px){
+  .container {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 900px){
+  nav {
+  width: 30%;
+  flex-direction: column;
+  }
+  .topnav a {
+    display: none;
+    margin-left: 0;
+  }
+  .topnav a.icon {
+    display: block;
+  }
+  .topnav.responsive {
+    position: relative;
+    width: 100%;
+    background-color: rgba(53,62,66,1);
+  }
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    display: block;
+    text-align: left;
+    padding: 8px;
+  }
+
+  main {
+    flex-direction: column-reverse;
+    height: auto;
+  }
+
+  #row2 {
+    flex-wrap: wrap;
+    height: auto;
+  }
+  #row2 div {
+    width: 42%;
+    margin: 2% 0;
+  }
+
+  #row3 {
+    flex-direction: column;
+    align-items: center;
+  }
+  .testemonials {
+    width: 90%;
+  }
+  .contact {
+    width: 90%;
+  }
+
+  .linkovi {
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 600px){
+  .maintext {
+    padding: 4%;
+  }
+  .maintext h1 {
+    font-size: 1.75em;
+  }
+  .maintext h2 {
+    font-size: 1.3em;
+  }
+
+  #row2 div {
+    width: 75%;
+    margin: 6% 0;
+  }
+
+#row3 h3, #row3 p {
+  text-align: center;
+}
+#row3 {
+  padding-bottom: 6%;
+}
+   .people {
+     flex-direction: column;
+     margin: 5% 0;
+   }
+
+   footer {
+     height: auto;
+     padding: 4%;
+   }
+   .linkovi {
+     flex-direction: column;
+     align-items: center;
+   }
+   .linkovi a {
+     margin: 1% 0;
+   }
+  }
